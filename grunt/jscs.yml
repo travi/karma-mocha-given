@@ -1,0 +1,11 @@
+dist:
+  src:
+    - index.js
+  options:
+    config: true
+
+test:
+  src:
+    - test/**/*.js
+  options:
+    config: true

@@ -1,0 +1,39 @@
+{
+  "name": "karma-mocha-given",
+  "version": "1.0.0",
+  "description": "karma adapter for mocha-given",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Matt Travi <npm@travi.org>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/travi/karma-mocha-given"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "//\/[\\w-]+\\.js$/",
+      "data-cover-never": [
+        "node_modules",
+        "public",
+        "test"
+      ]
+    }
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-adapter",
+    "mocha",
+    "mocha-given"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-jscs": "^1.6.0",
+    "grunt-jslint": "^1.1.14",
+    "grunt-mocha-cov": "^0.4.0",
+    "load-grunt-config": "^0.17.1",
+    "time-grunt": "^1.1.1"
+  }
+}

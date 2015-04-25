@@ -1,0 +1,20 @@
+app:
+  src: index.js
+  directives:
+    node: true
+  options:
+    errorsOnly: true
+
+test:
+  src: test/**/*.js
+  directives:
+    node: true
+    predef:
+      - suite
+      - setup
+      - teardown
+      - test
+      - assert
+      - sinon
+  options:
+    errorsOnly: true

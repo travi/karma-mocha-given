@@ -1,0 +1,11 @@
+lint:
+  - jscs
+  - jslint
+
+test: mochacov:unit
+
+verify:
+  - lint
+  - test
+
+default: verify
