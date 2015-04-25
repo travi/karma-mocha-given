@@ -14,7 +14,7 @@
   },
   "config": {
     "blanket": {
-      "pattern": "//\/[\\w-]+\\.js$/",
+      "pattern": "///[\\w-]+\\.js$/",
       "data-cover-never": [
         "node_modules",
         "public",
@@ -35,5 +35,9 @@
     "grunt-mocha-cov": "^0.4.0",
     "load-grunt-config": "^0.17.1",
     "time-grunt": "^1.1.1"
+  },
+  "dependencies": {
+    "mocha": "^2.2.4",
+    "mocha-given": "^0.1.3"
   }
 }
