@@ -24,11 +24,13 @@
   },
   "keywords": [
     "karma-plugin",
+    "karma-framework",
     "karma-adapter",
     "mocha",
     "mocha-given"
   ],
   "devDependencies": {
+    "chai": "^2.2.0",
     "grunt": "^0.4.5",
     "grunt-jscs": "^1.6.0",
     "grunt-jslint": "^1.1.14",
