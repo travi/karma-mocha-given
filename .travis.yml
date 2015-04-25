@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.12'
+- iojs
+
+before_install:
+- npm install -g grunt-cli
+
+install:
+- npm install
+
+sudo: false
+
+after_script: grunt mochacov:coverage
