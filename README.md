@@ -6,6 +6,9 @@ karma-mocha-given
 [![Code Climate](http://img.shields.io/codeclimate/github/travi/karma-mocha-given.svg?style=flat)](https://codeclimate.com/github/travi/karma-mocha-given)
 [![Dependency Status](http://img.shields.io/gemnasium/travi/karma-mocha-given.svg?style=flat)](https://gemnasium.com/travi/karma-mocha-given)
 
+[![npm](https://img.shields.io/npm/v/karma-mocha-given.svg)](https://www.npmjs.com/package/karma-mocha-given)
+[![license](https://img.shields.io/npm/l/karma-mocha-given.svg?style=flat)](https://www.npmjs.com/package/karma-mocha-given)
+
 ## Installation
 
 ```
