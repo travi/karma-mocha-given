@@ -21,17 +21,19 @@ suite('Mocha-Given Karma adapter tests', function () {
         adapter[1](fileList);
 
         assert.equal(fileList.length, originalFileCount + 2);
-        assert.include(fileList, {
-            pattern: path.dirname(require.resolve('mocha-given')) + '/browser/mocha-given.js',
-            included: true,
-            served: true,
-            watched: false
-        });
-        assert.include(fileList, {
-            pattern: path.normalize(__dirname + '/../lib/set-ui.js'),
-            included: true,
-            served: true,
-            watched: false
-        });
+        assert.deepEqual(fileList, [
+            {
+                pattern: path.dirname(require.resolve('mocha-given')) + '/browser/mocha-given.js',
+                included: true,
+                served: true,
+                watched: false
+            },
+            {
+                pattern: path.normalize(__dirname + '/../lib/set-ui.js'),
+                included: true,
+                served: true,
+                watched: false
+            }
+        ]);
     });
 });
