@@ -6,7 +6,7 @@ suite('Mocha-Given Karma adapter tests', function () {
     'use strict';
 
     test('that the karma dependency injection format is met', function () {
-        assert.equal(adapter[0], 'framework');
+        assert.equal(adapter[0], 'factory');
         assert.isFunction(adapter[1]);
     });
 

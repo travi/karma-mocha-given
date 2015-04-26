@@ -14,5 +14,5 @@ function framework(files) {
 framework.$inject = ['config.files'];
 
 module.exports = {
-    'framework:mocha-given': ['framework', framework]
+    'framework:mocha-given': ['factory', framework]
 };
