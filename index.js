@@ -4,7 +4,7 @@ var path = require('path');
 
 function framework(files) {
     files.unshift({
-        pattern: path.dirname(require.resolve('mocha-given')) + '/index.js',
+        pattern: path.dirname(require.resolve('mocha-given')) + '/browser/mocha-given.js',
         included: true,
         served: true,
         watched: false

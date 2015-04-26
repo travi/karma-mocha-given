@@ -22,7 +22,7 @@ suite('Mocha-Given Karma adapter tests', function () {
 
         assert.equal(fileList.length, originalFileCount + 1);
         assert.include(fileList, {
-            pattern: path.dirname(require.resolve('mocha-given') + '/index.js'),
+            pattern: path.dirname(require.resolve('mocha-given')) + '/browser/mocha-given.js',
             included: true,
             served: true,
             watched: false
