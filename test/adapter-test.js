@@ -1,4 +1,4 @@
-var adapter = require('../index')['framework:mocha-given'],
+var adapter = require('../lib/index')['framework:mocha-given'],
     assert = require('chai').assert,
     path = require('path');
 
@@ -20,9 +20,15 @@ suite('Mocha-Given Karma adapter tests', function () {
 
         adapter[1](fileList);
 
-        assert.equal(fileList.length, originalFileCount + 1);
+        assert.equal(fileList.length, originalFileCount + 2);
         assert.include(fileList, {
             pattern: path.dirname(require.resolve('mocha-given')) + '/browser/mocha-given.js',
+            included: true,
+            served: true,
+            watched: false
+        });
+        assert.include(fileList, {
+            pattern: path.normalize(__dirname + '/../lib/set-ui.js'),
             included: true,
             served: true,
             watched: false

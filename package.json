@@ -2,7 +2,7 @@
   "name": "karma-mocha-given",
   "version": "1.0.0",
   "description": "karma adapter for mocha-given",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "author": "Matt Travi <npm@travi.org>",
   "repository": {
