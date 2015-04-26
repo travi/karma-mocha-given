@@ -21,6 +21,3 @@ module.exports = function(config) {
   });
 }
 ```
-
-Unfortunately, the `karma-mocha` framework attempts to set the `ui` from the `config` section of the Karma configuration,
-so setting it there would
