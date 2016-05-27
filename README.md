@@ -25,7 +25,7 @@ module.exports = function(config) {
 }
 ```
 
-If using coffeescript to make the tests ready more like feature files, don't forget to use the Karma `preprocessor`:
+If using coffeescript to make the tests read more like feature files, don't forget to use the Karma `preprocessor`:
 
 ```js
 preprocessors: {
